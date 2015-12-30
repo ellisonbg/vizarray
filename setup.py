@@ -11,4 +11,5 @@ setup(name='vizarray',
       url='https://github.com/ellisonbg/vizarray',
       packages=['vizarray'],
       include_package_data=True,
+      license="Revised BSD"
      )

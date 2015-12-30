@@ -115,7 +115,7 @@ def _array_to_html(a):
     return vizarray(a)._repr_html_()
 
 
-def enable():
+def enable_notebook():
     """Enable automatic visualization of NumPy arrays in the IPython Notebook."""
     try:
         from IPython.core.getipython import get_ipython
@@ -126,7 +126,7 @@ def enable():
     f.for_type(np.ndarray, _array_to_html)
 
 
-def disable():
+def disable_notebook():
     """Disable automatic visualization of NumPy arrays in the IPython Notebook."""
     try:
         from IPython.core.getipython import get_ipython
